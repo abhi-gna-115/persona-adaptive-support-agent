@@ -107,6 +107,7 @@ Escalation Logic
    ↓
 Human Handoff Summary
 ```
+![Architecture Diagram](architecture_diagram.png)
 
 ---
 
