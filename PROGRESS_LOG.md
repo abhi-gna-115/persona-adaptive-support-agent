@@ -532,3 +532,208 @@ Pending:
 - Known limitations
 - Demo video
 - GitHub upload
+
+## Step 21: Migration from Keyword-Based Retrieval to Vector-Based RAG
+
+Objective:
+Improve document retrieval accuracy by replacing keyword matching with semantic search.
+
+Problem with Previous Approach:
+The initial implementation used keyword-based matching, which failed when users expressed queries using different words than those present in the support documents.
+
+Example:
+User Query:
+"How can I recover access to my account?"
+
+The keyword-based system could fail to retrieve password reset documents because the exact keyword "password" might not appear in the query.
+
+Solution:
+Implemented a vector-based Retrieval Augmented Generation (RAG) pipeline.
+
+Implementation Steps:
+
+1. Loaded all support documents.
+2. Split documents into fixed-size chunks with overlap.
+3. Generated embeddings for each chunk using the SentenceTransformers model:
+   all-MiniLM-L6-v2
+4. Stored embeddings in a FAISS vector database.
+5. Converted user queries into embeddings.
+6. Retrieved top-k semantically similar chunks using vector similarity search.
+
+Technologies Used:
+
+* SentenceTransformers
+* FAISS
+* NumPy
+
+Outcome:
+The system can now retrieve relevant information even when the user's wording differs from the document content.
+
+Status:
+Completed.
+
+---
+
+## Step 22: Document Chunking Strategy
+
+Objective:
+Prepare large documents for efficient semantic retrieval.
+
+Implementation:
+Implemented fixed-size chunking with overlap.
+
+Configuration:
+
+* Chunk Size: 500 characters
+* Overlap: 100 characters
+
+Reason:
+Chunking enables the system to retrieve only relevant portions of documents instead of passing entire documents to the LLM.
+
+Benefits:
+
+* Improved retrieval precision
+* Reduced context size
+* Better response quality
+
+Status:
+Completed.
+
+---
+
+## Step 23: Embedding Generation
+
+Objective:
+Convert document text into numerical vector representations.
+
+Implementation:
+Used SentenceTransformers embedding model:
+
+all-MiniLM-L6-v2
+
+Process:
+
+* Generated embeddings for every document chunk.
+* Converted embeddings to NumPy arrays.
+* Stored embeddings for semantic similarity search.
+
+Reason:
+Embeddings capture semantic meaning instead of relying on exact keyword matches.
+
+Status:
+Completed.
+
+---
+
+## Step 24: FAISS Vector Database Integration
+
+Objective:
+Store and search document embeddings efficiently.
+
+Implementation:
+Integrated Facebook AI Similarity Search (FAISS).
+
+Database Type:
+IndexFlatL2
+
+Workflow:
+
+1. Store document embeddings.
+2. Embed user query.
+3. Perform nearest-neighbor search.
+4. Retrieve top-k relevant chunks.
+
+Reason:
+FAISS provides fast and scalable similarity search for vector embeddings.
+
+Status:
+Completed.
+
+---
+
+## Step 25: LLM-Based Persona Detection
+
+Objective:
+Improve persona classification accuracy.
+
+Previous Approach:
+Rule-based persona detection using manually defined keywords.
+
+Limitations:
+
+* Limited flexibility.
+* Could miss implicit user emotions or intent.
+
+New Approach:
+Used Gemini LLM to classify users into one of the following personas:
+
+* Technical Expert
+* Frustrated User
+* Business Executive
+* General User
+
+Implementation:
+A dedicated prompt is sent to Gemini requesting classification into exactly one supported persona.
+
+Benefits:
+
+* Better understanding of user intent.
+* More adaptive responses.
+* Reduced dependence on manually maintained keyword lists.
+
+Status:
+Completed.
+
+---
+
+## Step 26: Architecture and Documentation Enhancement
+
+Completed:
+
+* Updated README.md.
+* Updated system architecture.
+* Added architecture diagram.
+* Updated technologies section.
+* Updated installation instructions.
+* Added requirements.txt.
+* Added future improvements section.
+* Added example queries.
+
+Repository:
+https://github.com/abhi-gna-115/persona-adaptive-support-agent
+
+Status:
+Completed.
+
+---
+
+## Final Project Architecture
+
+User
+↓
+Streamlit User Interface
+↓
+Greeting Detection
+↓
+Gemini Persona Detection
+↓
+Document Loader
+↓
+Document Chunking
+↓
+Embedding Generation (all-MiniLM-L6-v2)
+↓
+FAISS Vector Database
+↓
+Top-K Semantic Retrieval
+↓
+Gemini Response Generation
+↓
+Escalation Logic
+↓
+Human Handoff Summary
+↓
+Final Response
+
+Project Status:
+Submission Ready.
