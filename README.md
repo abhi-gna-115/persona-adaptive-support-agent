@@ -153,7 +153,7 @@ My-first-task/
 
 ```bash
 git clone https://github.com/abhi-gna-115/persona-adaptive-support-agent.git
-cd My-first-task
+cd persona-adaptive-support-agent
 ```
 
 ### Install Dependencies
