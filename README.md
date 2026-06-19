@@ -152,7 +152,7 @@ My-first-task/
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/abhi-gna-115/persona-adaptive-support-agent.git
 cd My-first-task
 ```
 
