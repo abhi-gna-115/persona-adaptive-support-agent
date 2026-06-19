@@ -7,7 +7,7 @@ import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-API_KEY = "YOUR_API_KEY"
+API_KEY = st.secrets["GEMINI_API_KEY"]
 DOCS_FOLDER = "docs"
 
 client = genai.Client(api_key=API_KEY)
