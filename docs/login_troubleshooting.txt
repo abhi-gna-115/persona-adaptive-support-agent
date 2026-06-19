@@ -1,0 +1,14 @@
+Title: Login Troubleshooting
+
+Users unable to log in should:
+
+1. Verify email and password.
+2. Reset password if necessary.
+3. Clear browser cache and cookies.
+4. Try another browser.
+5. Disable browser extensions temporarily.
+
+Escalate if:
+- Login fails after password reset.
+- User reports account compromise.
+- System-wide login failures occur.

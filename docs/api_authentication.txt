@@ -1,0 +1,18 @@
+Title: API Authentication Troubleshooting
+
+API authentication failures are commonly caused by:
+- Invalid API keys
+- Expired tokens
+- Incorrect request headers
+- Insufficient permissions
+
+Troubleshooting:
+1. Verify API key validity.
+2. Confirm token expiration status.
+3. Check Authorization header format.
+4. Review application permissions.
+
+Escalate if:
+- Authentication continues to fail after key regeneration.
+- Multiple services are affected.
+- Security concerns are reported.

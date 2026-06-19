@@ -1,0 +1,15 @@
+Title: Subscription Upgrade Guide
+
+Users can upgrade subscriptions from the account settings page.
+
+Benefits:
+- Additional storage
+- Premium support
+- Advanced analytics
+- Increased API limits
+
+Changes take effect immediately after successful payment.
+
+Escalate if:
+- Payment succeeds but plan is not upgraded.
+- Enterprise pricing questions arise.

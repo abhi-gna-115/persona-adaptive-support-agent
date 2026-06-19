@@ -1,0 +1,15 @@
+Title: Billing Support Guide
+
+Users may experience billing issues such as failed payments, duplicate charges, or invoice discrepancies.
+
+Recommended steps:
+1. Verify payment method details.
+2. Confirm sufficient account balance.
+3. Review recent transactions.
+4. Check whether payment was declined by the bank.
+
+Escalate if:
+- Duplicate charges occurred.
+- Refund requests are involved.
+- Legal or financial disputes are raised.
+- Enterprise customer billing is affected.

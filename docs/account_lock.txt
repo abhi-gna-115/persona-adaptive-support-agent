@@ -1,0 +1,20 @@
+Title: Account Lock Troubleshooting
+
+Accounts may be temporarily locked after multiple failed login attempts.
+This is done to protect the user account from unauthorized access.
+
+A temporary lock usually lasts for 30 minutes.
+After 30 minutes, the user can try logging in again with the correct password.
+
+Recommended steps:
+1. Wait 30 minutes before trying again.
+2. Reset the password if the user is unsure of the current password.
+3. Avoid repeated login attempts during the lock period.
+4. Check whether Caps Lock is enabled.
+5. Confirm that the correct registered email address is being used.
+
+Escalate the issue if:
+- The account remains locked after 30 minutes.
+- The user reports suspicious login activity.
+- The user cannot access the registered email address.
+- The issue affects a business-critical account.

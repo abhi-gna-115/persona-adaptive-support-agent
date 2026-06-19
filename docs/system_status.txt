@@ -1,0 +1,14 @@
+Title: System Status Information
+
+Scheduled maintenance may temporarily affect service availability.
+
+During maintenance:
+- Login delays may occur.
+- API response times may increase.
+- Some features may be unavailable.
+
+Check the status dashboard for updates.
+
+Escalate if:
+- Downtime exceeds scheduled window.
+- Critical business operations are impacted.

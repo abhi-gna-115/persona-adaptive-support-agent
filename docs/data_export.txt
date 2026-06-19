@@ -1,0 +1,21 @@
+Title: Data Export Guide
+
+Users can export account data from the Data Management section.
+
+Supported formats:
+- CSV
+- Excel
+- JSON
+
+Export processing time depends on data size.
+
+Recommended steps:
+1. Navigate to Data Management.
+2. Select Export Data.
+3. Choose export format.
+4. Wait for notification email.
+
+Escalate if:
+- Export fails repeatedly.
+- Export file is corrupted.
+- Enterprise customer data is affected.
